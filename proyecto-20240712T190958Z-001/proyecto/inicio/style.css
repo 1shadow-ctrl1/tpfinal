@@ -1,0 +1,101 @@
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    text-align: center;
+    background-color: grey;
+    font-family: "Roboto", sans-serif;
+    color: #333;
+}
+.inicio-btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  color: white;
+  background-color: #0b0f13;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.inicio-btn:hover {
+  background-color: gray;
+}
+
+nav {
+    background-color: #333; /* Color de fondo del navbar */
+    padding: 10px 20px; /* Espaciado interior del navbar */
+  }
+  
+  /* Estilos para los enlaces del navbar */
+  nav a {
+    color: white; /* Color del texto de los enlaces */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    padding: 10px; /* Espaciado interior de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    border-radius: 5px; /* Bordes redondeados */
+  }
+
+  /* Estilos para los enlaces al pasar el mouse */
+  nav a:hover {
+    background-color: #555; /* Color de fondo al pasar el mouse */
+  }
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Tres columnas de igual ancho */
+    grid-gap: 10px; /* Espacio entre las celdas del grid */
+}
+.item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+#text {
+    background-color:white ;
+}
+
+.comment-box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.comment-box h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.comment-box label {
+    font-weight: bold;
+}
+.comment-box textarea {
+    width: 100%;
+    height: 100px;
+    resize: vertical; 
+}
+.comment-box input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 16px;
+}
+.comment {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+}
+.comment p {
+    margin: 5px 0;
+}

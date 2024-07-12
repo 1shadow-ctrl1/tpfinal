@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/3150/PNG/512/clothing_shop_bag_tshirt_icon_192654.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>ROPAGES</title>
+  </head>
+  <body>
+    <main>
+      <a href="http://127.0.0.1:5500/inicio/wed.html" class="inicio-btn">inicio</a>
+      <section class="a">
+        <div class="container">
+          <div class="item">
+            <img src="https://ropadefulbo.com.ar/wp-content/uploads/2022/06/buzo_cabj-scaled-1.jpg" height="200px">
+            <p>
+              $ 10.000
+              <br>
+              <a href="http://127.0.0.1:5500/compra/index.html">comprar</a>
+
+            </p>
+          </div>
+          <div class="item">
+            <img src="https://acdn.mitiendanube.com/stores/001/534/706/products/b22883a9-8b48-4406-b81a-32b14b9297a2-7ef83feafb3c69798216121265886750-480-0.webp" height="200px">
+            <p>
+              $ 10.000
+              <br>
+              <a href="http://127.0.0.1:5500/compra/index.html">comprar</a>
+          </div>
+          <div class="item">
+            <img src="https://www.karavaka.com/wp-content/uploads/2024/05/LN-403-01-F0-1500x1500.jpg" height="180px">
+            <p></p>
+            $ 10.000
+              <br>
+              <a href="http://127.0.0.1:5500/compra/index.html">comprar</a>
+          </div>
+          <div class="item">
+            <img src="https://dcdn.mitiendanube.com/stores/001/054/455/products/3290-j1-e16eab3b9edfea892c16868308716892-1024-1024.webp" height="200px">
+            <p></p>
+            $ 10.000
+              <br>
+              <a href="http://127.0.0.1:5500/compra/index.html">comprar</a>
+          </div>
+          <div class="item">
+            <img src="https://taverniti.vtexassets.com/arquivos/ids/259850-800-960?v=638138788665900000&width=800&height=960&aspect=true" height="200px">
+            <p></p>
+            $ 10.000
+            <br>
+            <a href="http://127.0.0.1:5500/compra/index.html">comprar</a>
+          </div>
+          <div class="item">
+            <img src="https://acdn.mitiendanube.com/stores/001/918/773/products/20240330_083501-01-01-1e5cacf75f62eb4f2117118124024288-640-0.webp" height="200px">
+            <p></p>
+            $ 10.000
+            <br>
+            <a href="http://127.0.0.1:5500/compra/index.html">comprar</a>
+          </section>
+          <div class="comment-box">
+            <h2>Deja un comentario</h2>
+            <form id="comment-form">
+                <div>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="comment">Comentario:</label>
+                    <textarea id="comment" name="comment" required></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar comentario">
+                </div>
+            </form>
+        </div>
+        
+        <div id="comments">
+            <!-- Aquí se mostrarán los comentarios -->
+        </div>
+    </main>
+    <script>
+        
+      document.getElementById("comment-form").addEventListener("submit", function(event) {
+          event.preventDefault(); 
+          var name = document.getElementById("name").value;
+          var email = document.getElementById("email").value;
+          var comment = document.getElementById("comment").value;
+  
+          
+          var newComment = document.createElement("div");
+          newComment.classList.add("comment");
+          newComment.innerHTML = "<p><strong>" + name + "</strong> (" + email + ") dijo:</p><p>" + comment + "</p>";
+  
+          
+          var commentsContainer = document.getElementById("comments");
+          commentsContainer.insertBefore(newComment, commentsContainer.firstChild);
+  
+          
+          document.getElementById("comment-form").reset();
+      });
+  </script>
+  </body>
+</html>
